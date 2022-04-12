@@ -12,6 +12,9 @@ Attraverso un’altra chiamata api, filtrare gli album per genere
 vue-dischi.png
 -->
 
+<?php
+    include_once './db/data.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
