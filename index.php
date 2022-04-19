@@ -23,13 +23,16 @@ vue-dischi.png
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Dischi</title>
 
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <?php
-        include __DIR__ . '/partials/header.php';
-        include __DIR__ . '/partials/main.php';
-    ?>
+    <?php foreach ($arrDischi as $disco) : ?>
+        <img src="<?= $disco["poster"]?>" alt="">
+        <h1><?= $disco["title"]?></h1>
+        <h2><?= $disco["author"]?></h2>
+        <p><?= $disco["genre"]?></p>
+        <p><?= $disco["year"]?></p>
+    <?php endforeach ?>
 </body>
 </html>
 

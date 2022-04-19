@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main .cards-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.disc-card {
+    width: calc((100% - 4rem) / 5);
+}
+
+.disc-card img {
+    width: 100%;
+}
