@@ -15,11 +15,13 @@
         </header>
 
         <main>
-            <div v-for="disco in dischi" :key="disco.id">
-                <img :src="disco.poster" :alt="disco.title">
-                <h2>{{ disco.title }}</h2>
-                <h3>{{ disco.author }}</h3>
-                <small>{{ disco.year }}</small>
+            <div class="disc-grid">
+                <div class="disco" v-for="disco in dischi" :key="disco.id">
+                    <img :src="disco.poster" :alt="disco.title">
+                    <h2>{{ disco.title }}</h2>
+                    <h3>{{ disco.author }}</h3>
+                    <small>{{ disco.year }}</small>
+                </div>
             </div>
         </main>
     </div>
