@@ -25,7 +25,7 @@ Attraverso un’altra chiamata api, filtrare gli album per genere
     <link rel="stylesheet" href="style/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <?php foreach ($arrDischi as $disco) : ?>
+    <?php foreach ($arr_dischi as $disco) : ?>
         <img src="<?= $disco["poster"]?>" alt="">
         <h1><?= $disco["title"]?></h1>
         <h2><?= $disco["author"]?></h2>
